@@ -1,4 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
 body {
+    font-family: Roboto;
     display: flex;
     flex-direction: column;
     margin: 0;
@@ -11,13 +15,35 @@ body {
     align-items: center;
 }
 
-.links {
-    list-style: none;
-}
-
 .header {
     background: #1F2937;
-    color: white;
+    color: #F9FAF8;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+.right-links {
+    display: flex;
+    list-style: none;
+    gap: 16px;
+    color: #E5E7EB;
+}
+
+.header.main {
+    font-size: 48px;
+    font-weight: 800;
+}
+
+.header.logo {
+    list-style: none;
+    font-size: 24px;
+    color: #F9FAF8; 
 }
 
 .cards {
