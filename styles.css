@@ -70,14 +70,17 @@ body {
 
 .cards {
     display: flex;
-    flex-wrap: wrap; /* accommodates itself to the size of the window */
     justify-content: center;
     gap: 52px;
 }
 
+.size {
+    max-width: 200px;
+}
+
 .card {
-    width: 70px;
-    height: 70px;
+    width: 100px;
+    height: 100px;
     border: 2px solid blue; /* creates a border with thickness */
     border-radius: 4px; /* rounds out the border  */
     box-shadow: 2px 4px 16px rgba(0,0,0,.06); /* shadow for box */
