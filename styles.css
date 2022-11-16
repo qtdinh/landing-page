@@ -2,11 +2,11 @@
 
 
 body {
-    font-family: Roboto;
+    font-family: Roboto, sans-serif;
     display: flex;
     flex-direction: column;
     margin: 0;
-    min-height: 100vh;
+    min-height: 200vh;
 }
 
 .page {
@@ -20,6 +20,19 @@ body {
     color: #F9FAF8;
 }
 
+.container {
+    margin-right: 200px;
+    margin-left: 200px;
+    height: 65vh;
+    justify-content: center;
+}
+
+.content {
+    display: flex;
+    gap: 200px;
+
+}
+
 .links {
     display: flex;
     justify-content: space-between;
@@ -31,23 +44,33 @@ body {
 .right-links {
     display: flex;
     list-style: none;
-    gap: 16px;
+    gap: 24px; /* gap between links */
     color: #E5E7EB;
+    margin-right: 70px;
 }
+
 
 .header.main {
     font-size: 48px;
     font-weight: 800;
 }
 
+.text {
+    max-width: 400px;
+    margin-right: 200px;
+}
+
 .header.logo {
     list-style: none;
     font-size: 24px;
+    font-weight: bold;
     color: #F9FAF8; 
+    margin-bottom: 100px;
 }
 
 .cards {
     display: flex;
+    flex-wrap: wrap; /* accommodates itself to the size of the window */
     justify-content: center;
     gap: 52px;
 }
@@ -62,8 +85,13 @@ body {
 }
 
 button {
-    padding: 8px 16px;
+    padding: 8px 24px;
     border-radius: 8px;
+}
+
+button.sign {
+    background: #3882F6;
+    color: #F9FAF8;
 }
 
 .footer {
